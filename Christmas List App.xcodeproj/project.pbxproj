@@ -17,6 +17,9 @@
 		06983B9C2725273E00527FB6 /* Christmas_List_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983B9B2725273E00527FB6 /* Christmas_List_AppTests.swift */; };
 		06983BA62725273E00527FB6 /* Christmas_List_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BA52725273E00527FB6 /* Christmas_List_AppUITests.swift */; };
 		06983BA82725273E00527FB6 /* Christmas_List_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BA72725273E00527FB6 /* Christmas_List_AppUITestsLaunchTests.swift */; };
+		06983BB52725FCD600527FB6 /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB42725FCD600527FB6 /* UserClass.swift */; };
+		06983BB72725FD0C00527FB6 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB62725FD0C00527FB6 /* UserListViewController.swift */; };
+		06983BB9272604DF00527FB6 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		06983BA12725273E00527FB6 /* Christmas List AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Christmas List AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06983BA52725273E00527FB6 /* Christmas_List_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas_List_AppUITests.swift; sourceTree = "<group>"; };
 		06983BA72725273E00527FB6 /* Christmas_List_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Christmas_List_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06983BB42725FCD600527FB6 /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
+		06983BB62725FD0C00527FB6 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				06983B832725273D00527FB6 /* SceneDelegate.swift */,
 				06983B852725273D00527FB6 /* ViewController.swift */,
 				06983B872725273D00527FB6 /* Main.storyboard */,
+				06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */,
+				06983BB62725FD0C00527FB6 /* UserListViewController.swift */,
+				06983BB42725FCD600527FB6 /* UserClass.swift */,
 				06983B8D2725273E00527FB6 /* Assets.xcassets */,
 				06983B8F2725273E00527FB6 /* LaunchScreen.storyboard */,
 				06983B922725273E00527FB6 /* Info.plist */,
@@ -261,10 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06983BB52725FCD600527FB6 /* UserClass.swift in Sources */,
+				06983BB9272604DF00527FB6 /* CreateNewUserViewController.swift in Sources */,
 				06983B8C2725273D00527FB6 /* Christmas_List_App.xcdatamodeld in Sources */,
 				06983B862725273D00527FB6 /* ViewController.swift in Sources */,
 				06983B822725273D00527FB6 /* AppDelegate.swift in Sources */,
 				06983B842725273D00527FB6 /* SceneDelegate.swift in Sources */,
+				06983BB72725FD0C00527FB6 /* UserListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
