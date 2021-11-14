@@ -20,6 +20,8 @@
 		06983BB52725FCD600527FB6 /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB42725FCD600527FB6 /* UserClass.swift */; };
 		06983BB72725FD0C00527FB6 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB62725FD0C00527FB6 /* UserListViewController.swift */; };
 		06983BB9272604DF00527FB6 /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */; };
+		06F68C99274181A1009AA68A /* Item Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F68C98274181A1009AA68A /* Item Class.swift */; };
+		06F68C9B27418205009AA68A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F68C9A27418205009AA68A /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		06983BB42725FCD600527FB6 /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		06983BB62725FD0C00527FB6 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
+		06F68C98274181A1009AA68A /* Item Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item Class.swift"; sourceTree = "<group>"; };
+		06F68C9A27418205009AA68A /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,11 @@
 				06983B812725273D00527FB6 /* AppDelegate.swift */,
 				06983B832725273D00527FB6 /* SceneDelegate.swift */,
 				06983B852725273D00527FB6 /* ViewController.swift */,
-				06983B872725273D00527FB6 /* Main.storyboard */,
 				06983BB8272604DF00527FB6 /* CreateNewUserViewController.swift */,
 				06983BB62725FD0C00527FB6 /* UserListViewController.swift */,
+				06F68C9A27418205009AA68A /* CustomCell.swift */,
+				06983B872725273D00527FB6 /* Main.storyboard */,
+				06F68C98274181A1009AA68A /* Item Class.swift */,
 				06983BB42725FCD600527FB6 /* UserClass.swift */,
 				06983B8D2725273E00527FB6 /* Assets.xcassets */,
 				06983B8F2725273E00527FB6 /* LaunchScreen.storyboard */,
@@ -270,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F68C99274181A1009AA68A /* Item Class.swift in Sources */,
 				06983BB52725FCD600527FB6 /* UserClass.swift in Sources */,
 				06983BB9272604DF00527FB6 /* CreateNewUserViewController.swift in Sources */,
 				06983B8C2725273D00527FB6 /* Christmas_List_App.xcdatamodeld in Sources */,
+				06F68C9B27418205009AA68A /* CustomCell.swift in Sources */,
 				06983B862725273D00527FB6 /* ViewController.swift in Sources */,
 				06983B822725273D00527FB6 /* AppDelegate.swift in Sources */,
 				06983B842725273D00527FB6 /* SceneDelegate.swift in Sources */,
