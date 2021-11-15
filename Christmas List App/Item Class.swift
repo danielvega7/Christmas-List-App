@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Items {
+public class Items: Codable {
     
     var name: String
     var link: String
