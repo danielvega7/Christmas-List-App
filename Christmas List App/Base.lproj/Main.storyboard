@@ -53,6 +53,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Vwf-b4-vCw"/>
                     <navigationItem key="navigationItem" id="kX8-xV-aA3"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="fXR-Zo-bbF" id="IJN-4G-l6q"/>
+                        <outlet property="usernameTextField" destination="mvb-fs-nCD" id="F3O-2V-rkZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

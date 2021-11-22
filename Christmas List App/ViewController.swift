@@ -7,17 +7,14 @@
 
 import UIKit
 
-public class UserInfo{
+class ViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
-    static var userArray = [User]()
-    
-}
-
-class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
 

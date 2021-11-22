@@ -6,9 +6,7 @@
 //
 
 import UIKit
-public class StaticStuff {
-    public static var itemArray = [Items]()
-}
+
 class UserListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
    
     let encoder = JSONEncoder()
