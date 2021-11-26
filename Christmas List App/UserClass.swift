@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class User{
+public class User: Codable{
     
     var userName: String
     var password: String
@@ -18,7 +18,11 @@ public class User{
         password = p
         items = i
     }
-    
+    init(u: String, p: String) {
+        userName = u
+        password = p
+        items = [Items]()
+    }
     
     
 }

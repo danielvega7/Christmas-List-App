@@ -11,9 +11,7 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
    
     let encoder = JSONEncoder()
     @IBOutlet weak var tableViewOutlet: UITableView!
-    
     @IBOutlet weak var itemNameOutlet: UITextField!
-    
     @IBOutlet weak var linkOutlet: UITextField!
     
     override func viewDidLoad() {
@@ -31,6 +29,11 @@ class UserListViewController: UIViewController, UITableViewDelegate, UITableView
             }
         }
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        tableViewOutlet.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

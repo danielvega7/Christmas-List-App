@@ -10,6 +10,7 @@ import Foundation
 public class StaticStuff {
     public static var itemArray = [Items]()
     public static var userArray = [User]()
+    public static var whatUser = User(u: "default", p: "default")
 }
 
 

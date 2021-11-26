@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XIi-5a-pIZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n61-l4-glI">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Christmas_List_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create Account?"/>
                                 <connections>
-                                    <segue destination="xn0-dz-NeC" kind="show" id="Ylj-Bd-bny"/>
+                                    <segue destination="xn0-dz-NeC" kind="presentation" id="N7M-ht-5Yh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1U-9g-ZlT">
@@ -51,16 +51,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.68106558811859441" green="0.91980725526809692" blue="0.64518853565429268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Vwf-b4-vCw"/>
                     <navigationItem key="navigationItem" id="kX8-xV-aA3"/>
                     <connections>
                         <outlet property="passwordTextField" destination="fXR-Zo-bbF" id="IJN-4G-l6q"/>
                         <outlet property="usernameTextField" destination="mvb-fs-nCD" id="F3O-2V-rkZ"/>
+                        <segue destination="Nan-UI-mVD" kind="show" identifier="toItems" id="Pi3-AZ-4cO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="81.696428571428569"/>
+            <point key="canvasLocation" x="2818.4615384615386" y="81.042654028436019"/>
         </scene>
         <!--Create New User View Controller-->
         <scene sceneID="Z37-z1-lUk">
@@ -123,10 +123,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ck3-eb-O4q"/>
+                    <connections>
+                        <outlet property="confirmTextField" destination="esY-aH-O2p" id="qV0-6W-NPY"/>
+                        <outlet property="passwordTextField" destination="u87-qM-J69" id="z04-07-VPW"/>
+                        <outlet property="usernameTextField" destination="JKS-d0-EgU" id="cLO-lz-2WM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIy-9W-NDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890" y="769"/>
+            <point key="canvasLocation" x="2818" y="852"/>
         </scene>
         <!--Items-->
         <scene sceneID="rFa-mP-blq">
@@ -137,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ve-zT-3mK">
-                                <rect key="frame" x="0.0" y="78" width="390" height="683"/>
+                                <rect key="frame" x="0.0" y="122" width="390" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="ho4-8q-NrJ" customClass="CustomCell" customModule="Christmas_List_App" customModuleProvider="target">
@@ -180,7 +185,7 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I4H-rl-eWg">
-                                <rect key="frame" x="0.0" y="44" width="390" height="34"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u19-YL-9a3">
                                         <rect key="frame" x="0.0" y="0.0" width="127" height="34"/>
@@ -193,7 +198,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMl-eG-rOl">
-                                        <rect key="frame" x="270.33333333333331" y="1.6666666666666661" width="119.66666666666669" height="30.666666666666671"/>
+                                        <rect key="frame" x="270.33333333333331" y="1.6666666666666732" width="119.66666666666669" height="30.666666666666671"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                         <connections>
@@ -217,6 +222,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Items" image="gift" catalog="system" id="TDb-N0-XOZ"/>
+                    <navigationItem key="navigationItem" id="8Td-dC-dCk"/>
                     <connections>
                         <outlet property="itemNameOutlet" destination="u19-YL-9a3" id="LaR-5T-YQO"/>
                         <outlet property="linkOutlet" destination="rbF-5h-k03" id="3DF-fF-eBW"/>
@@ -225,26 +231,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sou-Qy-Bdj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2773.8461538461538" y="81.753554502369667"/>
+            <point key="canvasLocation" x="3703.0769230769229" y="81.753554502369667"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="VRJ-tw-4gy">
+        <!--Home-->
+        <scene sceneID="29e-ye-ILW">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XIi-5a-pIZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n61-l4-glI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Vwf-b4-vCw"/>
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3so-G4-5wi">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hwi-ih-tZZ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zrO-2P-g77"/>
-                        <segue destination="Nan-UI-mVD" kind="relationship" relationship="viewControllers" id="G01-eG-svK"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MQO-Dc-CUE"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o2o-lx-2P9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvn-cv-rXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979.71014492753636" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1889.2307692307691" y="81.042654028436019"/>
         </scene>
     </scenes>
     <resources>
